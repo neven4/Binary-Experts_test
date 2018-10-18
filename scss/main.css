@@ -1,0 +1,98 @@
+@font-face {
+  font-family: "Arial";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/ArialRegular/ArialRegular.eot");
+  src: url("../fonts/ArialRegular/ArialRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialRegular/ArialRegular.woff") format("woff"), url("../fonts/ArialRegular/ArialRegular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Arial";
+  font-weight: 700;
+  font-style: normal;
+  src: url("../fonts/ArialBold/ArialBold.eot");
+  src: url("../fonts/ArialBold/ArialBold.eot?#iefix") format("embedded-opentype"), url("../fonts/ArialBold/ArialBold.woff") format("woff"), url("../fonts/ArialBold/ArialBold.ttf") format("truetype");
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  line-height: 1.5;
+  color: #000;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: #1e2733;
+  height: 190px;
+}
+
+header .content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+header .content .logo {
+  margin-top: 68px;
+  margin-left: 40px;
+  margin-right: 70px;
+}
+
+header .content .tagline {
+  margin-top: 55px;
+  font-size: 25px;
+  color: #fff;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.news {
+  width: 1120px;
+  margin: 45px auto 3px auto;
+}
+
+.news h3 {
+  font-size: 24px;
+  font-weight: 700;
+  color: #ff0e00;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 0 rgba(0, 0, 0, 0.3);
+}
+
+.news .news-tab {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+  position: relative;
+}
+
+.news .news-tab .news-item .item-content {
+  padding: 15px 0;
+}
+
+.news .news-tab .news-item::before {
+  content: '';
+  position: absolute;
+  height: 1px;
+  background-color: #000;
+  display: block;
+  width: 100%;
+}
+/*# sourceMappingURL=main.css.map */
